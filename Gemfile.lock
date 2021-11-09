@@ -84,6 +84,7 @@ GEM
     duktape (2.6.0.0)
     erubi (1.10.0)
     execjs (2.8.1)
+    ffi (1.15.4)
     ffi (1.15.4-x64-mingw32)
     globalid (0.5.2)
       activesupport (>= 5.0)
@@ -101,9 +102,13 @@ GEM
     matrix (0.4.2)
     method_source (1.0.0)
     mini_mime (1.1.2)
+    mini_portile2 (2.6.1)
     minitest (5.14.4)
     msgpack (1.4.2)
     nio4r (2.5.8)
+    nokogiri (1.12.5)
+      mini_portile2 (~> 2.6.1)
+      racc (~> 1.4)
     nokogiri (1.12.5-x64-mingw32)
       racc (~> 1.4)
     orm_adapter (0.5.0)
@@ -196,6 +201,7 @@ GEM
       nokogiri (~> 1.8)
 
 PLATFORMS
+  ruby
   x64-mingw32
 
 DEPENDENCIES
@@ -221,4 +227,4 @@ RUBY VERSION
    ruby 2.6.8p205
 
 BUNDLED WITH
-   1.17.2
+   1.17.3

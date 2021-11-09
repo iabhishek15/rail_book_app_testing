@@ -12,6 +12,14 @@
   <body>
       <%= render 'layouts/alerts'%>
     <%= render 'layouts/navbar'%>
+
+     <ul>
+      <% if user_signed_in?%>
+       <li> <%= link_to "Add Book" , new_book_path %> </li>
+       <%end %>
+      </ul>
+
+
     <%= yield %>
   </body>
 </html>
