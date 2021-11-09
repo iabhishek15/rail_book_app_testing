@@ -3,7 +3,7 @@ class BooksController < ApplicationController
   before_action :authenticate_user!, except: [:show, :index ]
   # GET /books or /books.json
   def index
-    @books = Book.all
+    @books = Book.paginate(page:params[:page], per_page:4)
   end
 
   # GET /books/1 or /books/1.json
